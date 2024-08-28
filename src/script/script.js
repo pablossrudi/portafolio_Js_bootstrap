@@ -3,7 +3,7 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-const tareaTabla = document.getElementById("proyectos");
+const areaProyectos = document.getElementById("proyectos");
 const formulario = document.getElementById('formulario');
 const correoInput = document.getElementById('correo');
 
@@ -32,7 +32,7 @@ function contenidoCarrusel() {
   let contenido = '';
   contenido += `<h3>${proyectos[contador].titulo}</h3><br><tr>`;
   contenido += `<p>${proyectos[contador].descripcion}</p>`;
-  tareaTabla.innerHTML = contenido;
+  areaProyectos.innerHTML = contenido;
 }
 
 function sumar() {
